@@ -1,0 +1,2625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>Assignment2</name>
+    <description />
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection />
+        <schema />
+        <table />
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file />
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2018/02/05 21:17:39.588</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2018/02/05 21:17:39.588</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>dw_assignment</name>
+    <server>127.0.0.1</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>DW_Assignment</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce108bcafe8d</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>3306</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>STREAM_RESULTS</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>Calculator</from>
+      <to>ProductID Stream lookup</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Customer Table input</from>
+      <to>CustomerID Stream lookup</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>CustomerID Stream lookup</from>
+      <to>TimeID Stream lookup</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>ProductID Stream lookup</from>
+      <to>Sale-Table output</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>SaleItem</from>
+      <to>Calculator</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Time Table input</from>
+      <to>TimeID Stream lookup</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>TimeID Stream lookup</from>
+      <to>ProductID Stream lookup</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>raw-Sale Table input</from>
+      <to>CustomerID Stream lookup</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Date</from>
+      <to>Time-Table output</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Cost-Calculator</from>
+      <to>Select values</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Dimension lookup/update</from>
+      <to>Table output</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Product</from>
+      <to>Product-Stream lookup</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Product-Stream lookup</from>
+      <to>Sort rows</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>ProductOrder</from>
+      <to>Cost-Calculator</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values</from>
+      <to>Product-Stream lookup</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort rows</from>
+      <to>Dimension lookup/update</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Calculator 3</from>
+      <to>Sort rows 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Customer</from>
+      <to>If not null</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Dimension lookup/update 2</from>
+      <to>Customer-Table output</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>If not null</from>
+      <to>Calculator 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort rows 2</from>
+      <to>Dimension lookup/update 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Store</from>
+      <to>Store-Table output</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sale</from>
+      <to>raw-Sale Table output</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Calculator</name>
+    <type>Calculator</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <calculation>
+      <field_name>Revenue</field_name>
+      <calc_type>MULTIPLY</calc_type>
+      <field_a>Units</field_a>
+      <field_b>UnitPrice</field_b>
+      <field_c />
+      <value_type>Number</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask />
+      <decimal_symbol />
+      <grouping_symbol />
+      <currency_symbol />
+    </calculation>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>704</xloc>
+      <yloc>880</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Customer Table input</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>dw_assignment</connection>
+    <sql>SELECT CustomerID, CustCode FROM Customer</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>880</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>CustomerID Stream lookup</name>
+    <type>StreamLookup</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <from>Customer Table input</from>
+    <input_sorted>N</input_sorted>
+    <preserve_memory>Y</preserve_memory>
+    <sorted_list>N</sorted_list>
+    <integer_pair>N</integer_pair>
+    <lookup>
+      <key>
+        <name>Cust_Key</name>
+        <field>CustCode</field>
+      </key>
+      <value>
+        <name>CustomerID</name>
+        <rename>CustomerID</rename>
+        <default />
+        <type>Integer</type>
+      </value>
+    </lookup>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>992</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>ProductID Stream lookup</name>
+    <type>StreamLookup</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <from>Calculator</from>
+    <input_sorted>N</input_sorted>
+    <preserve_memory>N</preserve_memory>
+    <sorted_list>N</sorted_list>
+    <integer_pair>N</integer_pair>
+    <lookup>
+      <key>
+        <name>SaleID</name>
+        <field>SaleID</field>
+      </key>
+      <value>
+        <name>ProductID</name>
+        <rename>ProductID</rename>
+        <default />
+        <type>Integer</type>
+      </value>
+      <value>
+        <name>Revenue</name>
+        <rename>Revenue</rename>
+        <default />
+        <type>Number</type>
+      </value>
+      <value>
+        <name>Units</name>
+        <rename>Quantity</rename>
+        <default />
+        <type>Integer</type>
+      </value>
+      <value>
+        <name>UnitPrice</name>
+        <rename>Sale_Price</rename>
+        <default />
+        <type>Number</type>
+      </value>
+    </lookup>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>704</xloc>
+      <yloc>992</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sale-Table output</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>dw_assignment</connection>
+    <schema />
+    <table>Sale</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>SaleID</column_name>
+        <stream_name>SaleID</stream_name>
+      </field>
+      <field>
+        <column_name>ProductID</column_name>
+        <stream_name>ProductID</stream_name>
+      </field>
+      <field>
+        <column_name>CustomerID</column_name>
+        <stream_name>CustomerID</stream_name>
+      </field>
+      <field>
+        <column_name>TimeID</column_name>
+        <stream_name>TimeID</stream_name>
+      </field>
+      <field>
+        <column_name>StoreID</column_name>
+        <stream_name>StoreID</stream_name>
+      </field>
+      <field>
+        <column_name>Revenue</column_name>
+        <stream_name>Revenue</stream_name>
+      </field>
+      <field>
+        <column_name>Quantity</column_name>
+        <stream_name>Quantity</stream_name>
+      </field>
+      <field>
+        <column_name>Sale_Price</column_name>
+        <stream_name>Sale_Price</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>864</xloc>
+      <yloc>992</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>SaleItem</name>
+    <type>ExcelInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <header>Y</header>
+    <noempty>Y</noempty>
+    <stoponempty>N</stoponempty>
+    <filefield />
+    <sheetfield />
+    <sheetrownumfield />
+    <rownumfield />
+    <sheetfield />
+    <filefield />
+    <limit>0</limit>
+    <encoding />
+    <add_to_result_filenames>Y</add_to_result_filenames>
+    <accept_filenames>N</accept_filenames>
+    <accept_field />
+    <accept_stepname />
+    <file>
+      <name>/Users/aiaileen/,00-Mine/Study/UniMEL/2018Summer/DataWarehouse/Assignment/2/OLTP/OrderSystem/SaleItem.xlsx</name>
+      <filemask />
+      <exclude_filemask />
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+    </file>
+    <fields>
+      <field>
+        <name>SaleID</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>LineID</name>
+        <type>Number</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format>#</format>
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>ProductID</name>
+        <type>Number</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format>#</format>
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>Units</name>
+        <type>Number</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format>#</format>
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>UnitPrice</name>
+        <type>Number</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format>0.00</format>
+        <currency />
+        <decimal />
+        <group />
+      </field>
+    </fields>
+    <sheets>
+      <sheet>
+        <name>Sheet1</name>
+        <startrow>0</startrow>
+        <startcol>0</startcol>
+      </sheet>
+    </sheets>
+    <strict_types>N</strict_types>
+    <error_ignored>N</error_ignored>
+    <error_line_skipped>N</error_line_skipped>
+    <bad_line_files_destination_directory />
+    <bad_line_files_extension>warning</bad_line_files_extension>
+    <error_line_files_destination_directory />
+    <error_line_files_extension>error</error_line_files_extension>
+    <line_number_files_destination_directory />
+    <line_number_files_extension>line</line_number_files_extension>
+    <shortFileFieldName />
+    <pathFieldName />
+    <hiddenFieldName />
+    <lastModificationTimeFieldName />
+    <uriNameFieldName />
+    <rootUriNameFieldName />
+    <extensionFieldName />
+    <sizeFieldName />
+    <spreadsheet_type>SAX_POI</spreadsheet_type>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>576</xloc>
+      <yloc>880</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Time Table input</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>dw_assignment</connection>
+    <sql>SELECT TimeID, Date FROM Time</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>464</xloc>
+      <yloc>880</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>TimeID Stream lookup</name>
+    <type>StreamLookup</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <from>Time Table input</from>
+    <input_sorted>N</input_sorted>
+    <preserve_memory>Y</preserve_memory>
+    <sorted_list>N</sorted_list>
+    <integer_pair>N</integer_pair>
+    <lookup>
+      <key>
+        <name>Date</name>
+        <field>Date</field>
+      </key>
+      <value>
+        <name>TimeID</name>
+        <rename>TimeID</rename>
+        <default />
+        <type>None</type>
+      </value>
+    </lookup>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>464</xloc>
+      <yloc>992</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>raw-Sale Table input</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>dw_assignment</connection>
+    <sql>SELECT * FROM DW_Assignment.`raw-Sale`;</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>112</xloc>
+      <yloc>992</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Date</name>
+    <type>ExcelInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <header>Y</header>
+    <noempty>Y</noempty>
+    <stoponempty>N</stoponempty>
+    <filefield />
+    <sheetfield />
+    <sheetrownumfield />
+    <rownumfield />
+    <sheetfield />
+    <filefield />
+    <limit>0</limit>
+    <encoding />
+    <add_to_result_filenames>Y</add_to_result_filenames>
+    <accept_filenames>N</accept_filenames>
+    <accept_field />
+    <accept_stepname />
+    <file>
+      <name>/Users/aiaileen/,00-Mine/Study/UniMEL/2018Summer/DataWarehouse/Assignment/2/OLTP/Date.xlsx</name>
+      <filemask />
+      <exclude_filemask />
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+    </file>
+    <fields>
+      <field>
+        <name>Date_Key</name>
+        <type>Number</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format>#</format>
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>Date</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format>yyyy-MM-dd</format>
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>DayOfWeek</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>Month</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>Quarter</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format>#</format>
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>Year</name>
+        <type>Number</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format>#</format>
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>Day</name>
+        <type>Number</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format>#</format>
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>Season</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+      </field>
+    </fields>
+    <sheets>
+      <sheet>
+        <name>Date</name>
+        <startrow>0</startrow>
+        <startcol>0</startcol>
+      </sheet>
+    </sheets>
+    <strict_types>N</strict_types>
+    <error_ignored>N</error_ignored>
+    <error_line_skipped>N</error_line_skipped>
+    <bad_line_files_destination_directory />
+    <bad_line_files_extension>warning</bad_line_files_extension>
+    <error_line_files_destination_directory />
+    <error_line_files_extension>error</error_line_files_extension>
+    <line_number_files_destination_directory />
+    <line_number_files_extension>line</line_number_files_extension>
+    <shortFileFieldName />
+    <pathFieldName />
+    <hiddenFieldName />
+    <lastModificationTimeFieldName />
+    <uriNameFieldName />
+    <rootUriNameFieldName />
+    <extensionFieldName />
+    <sizeFieldName />
+    <spreadsheet_type>POI</spreadsheet_type>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>96</xloc>
+      <yloc>480</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Time-Table output</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection />
+    <schema />
+    <table>Time</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>TimeID</column_name>
+        <stream_name>Date_Key</stream_name>
+      </field>
+      <field>
+        <column_name>Date</column_name>
+        <stream_name>Date</stream_name>
+      </field>
+      <field>
+        <column_name>DayOfWeek</column_name>
+        <stream_name>DayOfWeek</stream_name>
+      </field>
+      <field>
+        <column_name>Month</column_name>
+        <stream_name>Month</stream_name>
+      </field>
+      <field>
+        <column_name>Quarter</column_name>
+        <stream_name>Quarter</stream_name>
+      </field>
+      <field>
+        <column_name>Year</column_name>
+        <stream_name>Year</stream_name>
+      </field>
+      <field>
+        <column_name>Day</column_name>
+        <stream_name>Day</stream_name>
+      </field>
+      <field>
+        <column_name>Season</column_name>
+        <stream_name>Season</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>864</xloc>
+      <yloc>480</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Cost-Calculator</name>
+    <type>Calculator</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <calculation>
+      <field_name>Cost</field_name>
+      <calc_type>MULTIPLY</calc_type>
+      <field_a>CostPerItem</field_a>
+      <field_b>Quantity</field_b>
+      <field_c />
+      <value_type>Number</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask />
+      <decimal_symbol />
+      <grouping_symbol />
+      <currency_symbol />
+    </calculation>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>192</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Dimension lookup/update</name>
+    <type>DimensionLookup</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <schema />
+    <table>Cost</table>
+    <connection />
+    <commit>100</commit>
+    <update>Y</update>
+    <fields>
+      <key>
+        <name>ID</name>
+        <lookup>id</lookup>
+      </key>
+      <date>
+        <name />
+        <from>date_from</from>
+        <to>date_to</to>
+      </date>
+      <field>
+        <name>Description</name>
+        <lookup>Description</lookup>
+        <update>Insert</update>
+      </field>
+      <field>
+        <name>Cost</name>
+        <lookup>Cost</lookup>
+        <update>Insert</update>
+      </field>
+      <field>
+        <name>Date</name>
+        <lookup>Date</lookup>
+        <update>Insert</update>
+      </field>
+      <field>
+        <name>Group</name>
+        <lookup>Group</lookup>
+        <update>Insert</update>
+      </field>
+      <return>
+        <name>Product_ID</name>
+        <rename />
+        <creation_method>autoinc</creation_method>
+        <use_autoinc>Y</use_autoinc>
+        <version>version</version>
+      </return>
+    </fields>
+    <sequence />
+    <min_year>1900</min_year>
+    <max_year>2199</max_year>
+    <cache_size>5000</cache_size>
+    <preload_cache>N</preload_cache>
+    <use_start_date_alternative>N</use_start_date_alternative>
+    <start_date_alternative>none</start_date_alternative>
+    <start_date_field_name />
+    <useBatch>N</useBatch>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>688</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Product</name>
+    <type>ExcelInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <header>Y</header>
+    <noempty>Y</noempty>
+    <stoponempty>N</stoponempty>
+    <filefield />
+    <sheetfield />
+    <sheetrownumfield />
+    <rownumfield />
+    <sheetfield />
+    <filefield />
+    <limit>0</limit>
+    <encoding />
+    <add_to_result_filenames>Y</add_to_result_filenames>
+    <accept_filenames>N</accept_filenames>
+    <accept_field />
+    <accept_stepname />
+    <file>
+      <name>/Users/aiaileen/,00-Mine/Study/UniMEL/2018Summer/DataWarehouse/Assignment/2/OLTP/InventorySystem/Product.xlsx</name>
+      <filemask />
+      <exclude_filemask />
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+      <name />
+      <filemask />
+      <exclude_filemask />
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+      <name />
+      <filemask />
+      <exclude_filemask />
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+      <name />
+      <filemask />
+      <exclude_filemask />
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+    </file>
+    <fields>
+      <field>
+        <name>ID</name>
+        <type>Number</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format>#</format>
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>Description</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>Group</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+      </field>
+    </fields>
+    <sheets>
+      <sheet>
+        <name>PriceList</name>
+        <startrow>0</startrow>
+        <startcol>0</startcol>
+      </sheet>
+    </sheets>
+    <strict_types>N</strict_types>
+    <error_ignored>N</error_ignored>
+    <error_line_skipped>N</error_line_skipped>
+    <bad_line_files_destination_directory />
+    <bad_line_files_extension>warning</bad_line_files_extension>
+    <error_line_files_destination_directory />
+    <error_line_files_extension>error</error_line_files_extension>
+    <line_number_files_destination_directory />
+    <line_number_files_extension>line</line_number_files_extension>
+    <shortFileFieldName />
+    <pathFieldName />
+    <hiddenFieldName />
+    <lastModificationTimeFieldName />
+    <uriNameFieldName />
+    <rootUriNameFieldName />
+    <extensionFieldName />
+    <sizeFieldName />
+    <spreadsheet_type>POI</spreadsheet_type>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Product-Stream lookup</name>
+    <type>StreamLookup</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <from />
+    <input_sorted>N</input_sorted>
+    <preserve_memory>Y</preserve_memory>
+    <sorted_list>N</sorted_list>
+    <integer_pair>N</integer_pair>
+    <lookup>
+      <key>
+        <name>ID</name>
+        <field>ID</field>
+      </key>
+      <value>
+        <name>Group</name>
+        <rename>Group</rename>
+        <default />
+        <type>None</type>
+      </value>
+    </lookup>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>ProductOrder</name>
+    <type>ExcelInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <header>Y</header>
+    <noempty>Y</noempty>
+    <stoponempty>N</stoponempty>
+    <filefield />
+    <sheetfield />
+    <sheetrownumfield />
+    <rownumfield />
+    <sheetfield />
+    <filefield />
+    <limit>0</limit>
+    <encoding />
+    <add_to_result_filenames>Y</add_to_result_filenames>
+    <accept_filenames>N</accept_filenames>
+    <accept_field />
+    <accept_stepname />
+    <file>
+      <name>/Users/aiaileen/,00-Mine/Study/UniMEL/2018Summer/DataWarehouse/Assignment/2/OLTP/InventorySystem/ProductOrder.xlsx</name>
+      <filemask />
+      <exclude_filemask />
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+    </file>
+    <fields>
+      <field>
+        <name>ID</name>
+        <type>Number</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format>#</format>
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>Date</name>
+        <type>Date</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format>dd/MM/yyyy</format>
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>Description</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>Quantity</name>
+        <type>Number</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format>#</format>
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>CostPerItem</name>
+        <type>Number</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format>0.00</format>
+        <currency />
+        <decimal />
+        <group />
+      </field>
+    </fields>
+    <sheets>
+      <sheet>
+        <name>PriceList</name>
+        <startrow>0</startrow>
+        <startcol>0</startcol>
+      </sheet>
+    </sheets>
+    <strict_types>N</strict_types>
+    <error_ignored>N</error_ignored>
+    <error_line_skipped>N</error_line_skipped>
+    <bad_line_files_destination_directory />
+    <bad_line_files_extension>warning</bad_line_files_extension>
+    <error_line_files_destination_directory />
+    <error_line_files_extension>error</error_line_files_extension>
+    <line_number_files_destination_directory />
+    <line_number_files_extension>line</line_number_files_extension>
+    <shortFileFieldName />
+    <pathFieldName />
+    <hiddenFieldName />
+    <lastModificationTimeFieldName />
+    <uriNameFieldName />
+    <rootUriNameFieldName />
+    <extensionFieldName />
+    <sizeFieldName />
+    <spreadsheet_type>POI</spreadsheet_type>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>96</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>ID</name>
+      </field>
+      <field>
+        <name>Description</name>
+      </field>
+      <field>
+        <name>Cost</name>
+      </field>
+      <field>
+        <name>Date</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort rows</name>
+    <type>SortRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory />
+    <compress>N</compress>
+    <compress_variable />
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>ID</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>Date</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>544</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Table output</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>dw_assignment</connection>
+    <schema />
+    <table>Product</table>
+    <commit>10000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>Prod_ID</column_name>
+        <stream_name>Product_ID</stream_name>
+      </field>
+      <field>
+        <column_name>Prod_Code</column_name>
+        <stream_name>ID</stream_name>
+      </field>
+      <field>
+        <column_name>Description</column_name>
+        <stream_name>Description</stream_name>
+      </field>
+      <field>
+        <column_name>Group</column_name>
+        <stream_name>Group</stream_name>
+      </field>
+      <field>
+        <column_name>Cost</column_name>
+        <stream_name>Cost</stream_name>
+      </field>
+      <field>
+        <column_name>Date</column_name>
+        <stream_name>Date</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>832</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Calculator 3</name>
+    <type>Calculator</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <calculation>
+      <field_name>Year</field_name>
+      <calc_type>YEAR_OF_DATE</calc_type>
+      <field_a>Date of Birth</field_a>
+      <field_b />
+      <field_c />
+      <value_type>Integer</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask />
+      <decimal_symbol />
+      <grouping_symbol />
+      <currency_symbol />
+    </calculation>
+    <calculation>
+      <field_name>2018</field_name>
+      <calc_type>CONSTANT</calc_type>
+      <field_a>2018</field_a>
+      <field_b />
+      <field_c />
+      <value_type>Integer</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask />
+      <decimal_symbol />
+      <grouping_symbol />
+      <currency_symbol />
+    </calculation>
+    <calculation>
+      <field_name>Age</field_name>
+      <calc_type>SUBTRACT</calc_type>
+      <field_a>2018</field_a>
+      <field_b>Year</field_b>
+      <field_c />
+      <value_type>Integer</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask />
+      <decimal_symbol />
+      <grouping_symbol />
+      <currency_symbol />
+    </calculation>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>352</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Customer</name>
+    <type>CsvInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <filename>/Users/aiaileen/,00-Mine/Study/UniMEL/2018Summer/DataWarehouse/Assignment/2/OLTP/OrderSystem/Customer.csv</filename>
+    <filename_field />
+    <rownum_field />
+    <include_filename>N</include_filename>
+    <separator>,</separator>
+    <enclosure>"</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>N</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding />
+    <fields>
+      <field>
+        <name>CustCode</name>
+        <type>String</type>
+        <format />
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>11</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Name</name>
+        <type>String</type>
+        <format />
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>28</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Postcode</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Date of Birth</name>
+        <type>Date</type>
+        <format>dd/MM/yyyy</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>Validuntil</name>
+        <type>Date</type>
+        <format>dd/MM/yyyy</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>96</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Customer-Table output</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection />
+    <schema />
+    <table>Customer</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>CustomerID</column_name>
+        <stream_name>CustomerID</stream_name>
+      </field>
+      <field>
+        <column_name>CustCode</column_name>
+        <stream_name>CustCode</stream_name>
+      </field>
+      <field>
+        <column_name>Name</column_name>
+        <stream_name>Name</stream_name>
+      </field>
+      <field>
+        <column_name>Date of Birth</column_name>
+        <stream_name>Date of Birth</stream_name>
+      </field>
+      <field>
+        <column_name>Age</column_name>
+        <stream_name>Age</stream_name>
+      </field>
+      <field>
+        <column_name>Postcode</column_name>
+        <stream_name>Postcode</stream_name>
+      </field>
+      <field>
+        <column_name>Validuntil</column_name>
+        <stream_name>Validuntil</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>848</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Dimension lookup/update 2</name>
+    <type>DimensionLookup</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <schema />
+    <table>Customer-slolyChanging</table>
+    <connection />
+    <commit>100</commit>
+    <update>Y</update>
+    <fields>
+      <key>
+        <name>CustCode</name>
+        <lookup>CustCode</lookup>
+      </key>
+      <date>
+        <name />
+        <from>date_from</from>
+        <to>date_to</to>
+      </date>
+      <field>
+        <name>Name</name>
+        <lookup>Name</lookup>
+        <update>Insert</update>
+      </field>
+      <field>
+        <name>Postcode</name>
+        <lookup>Postcode</lookup>
+        <update>Insert</update>
+      </field>
+      <field>
+        <name>Date of Birth</name>
+        <lookup>Date of Birth</lookup>
+        <update>Insert</update>
+      </field>
+      <field>
+        <name>Validuntil</name>
+        <lookup>Validuntil</lookup>
+        <update>Insert</update>
+      </field>
+      <return>
+        <name>CustomerID</name>
+        <rename />
+        <creation_method>autoinc</creation_method>
+        <use_autoinc>Y</use_autoinc>
+        <version>version</version>
+      </return>
+    </fields>
+    <sequence />
+    <min_year>1900</min_year>
+    <max_year>2199</max_year>
+    <cache_size>5000</cache_size>
+    <preload_cache>N</preload_cache>
+    <use_start_date_alternative>N</use_start_date_alternative>
+    <start_date_alternative>none</start_date_alternative>
+    <start_date_field_name />
+    <useBatch>N</useBatch>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>656</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>If not null</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to>Calculator</send_true_to>
+    <send_false_to />
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>CustCode</leftvalue>
+        <function>IS NOT NULL</function>
+        <rightvalue />
+      </condition>
+    </compare>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>224</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort rows 2</name>
+    <type>SortRows</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory />
+    <compress>N</compress>
+    <compress_variable />
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>CustCode</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>Date of Birth</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>Postcode</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>496</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Store</name>
+    <type>ExcelInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <header>Y</header>
+    <noempty>Y</noempty>
+    <stoponempty>N</stoponempty>
+    <filefield />
+    <sheetfield />
+    <sheetrownumfield />
+    <rownumfield />
+    <sheetfield />
+    <filefield />
+    <limit>0</limit>
+    <encoding />
+    <add_to_result_filenames>Y</add_to_result_filenames>
+    <accept_filenames>N</accept_filenames>
+    <accept_field />
+    <accept_stepname />
+    <file>
+      <name>/Users/aiaileen/,00-Mine/Study/UniMEL/2018Summer/DataWarehouse/Assignment/2/OLTP/OrderSystem/Store.xlsx</name>
+      <filemask />
+      <exclude_filemask />
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+    </file>
+    <fields>
+      <field>
+        <name>StoreID</name>
+        <type>Number</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format>#</format>
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>Description</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>Postcode</name>
+        <type>Number</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format>#</format>
+        <currency />
+        <decimal />
+        <group />
+      </field>
+    </fields>
+    <sheets>
+      <sheet>
+        <name>Store</name>
+        <startrow>0</startrow>
+        <startcol>0</startcol>
+      </sheet>
+    </sheets>
+    <strict_types>N</strict_types>
+    <error_ignored>N</error_ignored>
+    <error_line_skipped>N</error_line_skipped>
+    <bad_line_files_destination_directory />
+    <bad_line_files_extension>warning</bad_line_files_extension>
+    <error_line_files_destination_directory />
+    <error_line_files_extension>error</error_line_files_extension>
+    <line_number_files_destination_directory />
+    <line_number_files_extension>line</line_number_files_extension>
+    <shortFileFieldName />
+    <pathFieldName />
+    <hiddenFieldName />
+    <lastModificationTimeFieldName />
+    <uriNameFieldName />
+    <rootUriNameFieldName />
+    <extensionFieldName />
+    <sizeFieldName />
+    <spreadsheet_type>POI</spreadsheet_type>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>96</xloc>
+      <yloc>592</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Store-Table output</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection />
+    <schema />
+    <table>Store</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>864</xloc>
+      <yloc>592</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sale</name>
+    <type>ExcelInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <header>Y</header>
+    <noempty>Y</noempty>
+    <stoponempty>N</stoponempty>
+    <filefield />
+    <sheetfield />
+    <sheetrownumfield />
+    <rownumfield />
+    <sheetfield />
+    <filefield />
+    <limit>0</limit>
+    <encoding />
+    <add_to_result_filenames>Y</add_to_result_filenames>
+    <accept_filenames>N</accept_filenames>
+    <accept_field />
+    <accept_stepname />
+    <file>
+      <name>/Users/aiaileen/,00-Mine/Study/UniMEL/2018Summer/DataWarehouse/Assignment/2/OLTP/OrderSystem/Sale.xlsx</name>
+      <filemask />
+      <exclude_filemask />
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+    </file>
+    <fields>
+      <field>
+        <name>SaleID</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>Cust_Key</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>StoreID</name>
+        <type>Number</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>Date</name>
+        <type>Date</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+      </field>
+    </fields>
+    <sheets>
+      <sheet>
+        <name>Sheet1</name>
+        <startrow>0</startrow>
+        <startcol>0</startcol>
+      </sheet>
+    </sheets>
+    <strict_types>N</strict_types>
+    <error_ignored>N</error_ignored>
+    <error_line_skipped>N</error_line_skipped>
+    <bad_line_files_destination_directory />
+    <bad_line_files_extension>warning</bad_line_files_extension>
+    <error_line_files_destination_directory />
+    <error_line_files_extension>error</error_line_files_extension>
+    <line_number_files_destination_directory />
+    <line_number_files_extension>line</line_number_files_extension>
+    <shortFileFieldName />
+    <pathFieldName />
+    <hiddenFieldName />
+    <lastModificationTimeFieldName />
+    <uriNameFieldName />
+    <rootUriNameFieldName />
+    <extensionFieldName />
+    <sizeFieldName />
+    <spreadsheet_type>POI</spreadsheet_type>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>96</xloc>
+      <yloc>736</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>raw-Sale Table output</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>dw_assignment</connection>
+    <schema />
+    <table>raw-Sale</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>352</xloc>
+      <yloc>736</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>
